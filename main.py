@@ -43,10 +43,10 @@ async def main():
             print('exiting...')
             break
 
-        # Run with full conversation history
+      
         result = await Runner.run(agent, prompt, run_config=config)
 
-        # Add assistant reply to history
+        
         agent_response = result.final_output
 
         # Print reply
